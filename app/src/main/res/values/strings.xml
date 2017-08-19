@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WeChat</string>
+    <string name="username">用户名</string>
+    <string name="psw">密码</string>
+    <string name="new_user">新用户</string>
+
+    <string name="is_logout">正在退出......</string>
+    <string name="search">搜</string>
+    <string name="reason">一起学习Android</string>
+    <string name="new_msg">您有一条新消息</string>
+
+</resources>

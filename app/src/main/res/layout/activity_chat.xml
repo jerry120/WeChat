@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.wechat.widget.KeybordListenerLinearlayout
+    android:id="@+id/ll_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7e7e7"
+    android:orientation="vertical">
+
+    <include layout="@layout/tool_bar"></include>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e7e7e7">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/msg_send_bg"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_send_selector"
+            android:text="发送"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/chat_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@mipmap/chat_voice"/>
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/chat_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@mipmap/chat_pic"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/chat_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@mipmap/chat_video"/>
+
+        <ImageView
+            android:id="@+id/iv_camera"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/chat_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@mipmap/chat_camera"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/chat_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@mipmap/chat_hongbao"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/chat_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@mipmap/chat_face"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/chat_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@mipmap/chat_add"/>
+
+    </LinearLayout>
+
+</com.example.administrator.wechat.widget.KeybordListenerLinearlayout>
